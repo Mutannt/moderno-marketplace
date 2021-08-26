@@ -50,3 +50,57 @@
         }
     }
 }
+.search{
+    background-repeat: no-repeat;
+    background-size: cover; // замостить картинку (для разных мониторов)
+    background-position: center;
+    min-height: 533px;
+}
+.search__inner{
+    padding: 155px 0 100px; // padding-bottom для того, чтобы если вдруг будет много текста сверху, этот блок расширялся
+    color: #fff;
+    text-align: center;
+    &-title{
+        font-weight: 700;
+        font-size: 48px;
+        margin-bottom: 10px;
+        line-height: 72px;
+    }
+    &-text{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+    &-form{
+        max-width: 670px;
+        // width: 100%;  Если вдруг максимальная ширина не работает.
+        margin: 0 auto;
+        position: relative;
+        input{
+            display: block;
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+            height: 56px;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding-left: 25px;
+            padding-right: 60px;
+            &::placeholder{
+                color: #90a4ae;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        button{
+            position: absolute;
+            border: none;
+            background-color: transparent; // прозрачный
+            right: 20px;
+            top: 16px;
+        }
+    }
+}
+
