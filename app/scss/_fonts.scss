@@ -1,0 +1,7 @@
+@font-face { 
+    font-family: 'Roboto-Regular', sans-serif; // С большой буквы, если в папке fonts с большой
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+         url('../fonts/Roboto-Regular.woff') format('woff'); /* все современные браузеры, IE9+ */
+    font-weight: 400;
+    font-display: swap; // Пока шрифт не отображается, задействовать системный шрифт
+}

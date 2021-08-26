@@ -1,13 +1,52 @@
-html{
-    box-sizing: border-box;
+@import 'vars'; // Переменные
+@import 'global'; // Глобальные стили
+@import 'fonts'; // Глобальные шрифты
+
+.header__top-inner{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
 }
-*, *::before, *::after{
-    box-sizing: inherit;
+.header__text{
+    margin-left: auto;
+    margin-right: 50px;
+    span{
+        color: $red;
+    }
 }
-body{
-    background-color: lawngreen;
+.header__btn{
+    padding: 4px; // Така высота строки 24px, а необходимая ширина 32xp
+    width: 72px;
+    border-radius: 4px; // Скругление углов
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
 }
-.test{
+.header__btn-login{
+    background-color: $green;
+}
+.header__btn-register{
+    background-color: $red;
+    margin-left: 7px;
+}
+.header__menu{
+    background-color: $bg;
+}
+.menu{
     display: flex;
     align-items: center;
+    height: 60px;
+}
+.menu__list{
+    li{
+        a{ // Можно здесь или сразу в menu__list
+            color: #fff;
+            font-size: 14px;
+        }
+        display: inline-block;
+        & + li{ // & - подставит совего родителя (menu__list li + li)
+            margin-left: 30px;
+        }
+    }
 }
